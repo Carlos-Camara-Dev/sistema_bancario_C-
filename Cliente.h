@@ -1,21 +1,19 @@
 #include <string>
+using namespace std;
 
 class Cliente {
 private:
-    std::string nome;
-    std::string cpf;
-
+   string nome;
+   string cpf;
 public:
-    Cliente(std::string nome, std::string cpf) {
+    Cliente(string nome,string cpf) {
         this->nome = nome;
         this->cpf = cpf;
     }
-
-    std::string getNome() const {
+   string get_nome() const {
         return nome;
     }
-
-    std::string getCpf() const {
+   string get_cpf() const {
         return cpf;
     }
 };
